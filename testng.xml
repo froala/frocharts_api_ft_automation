@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="API Regression">
+
+	<listeners>
+		<listener class-name="com.froalacharts.ExtentReportListener.ExtentReporterNG"/>
+	</listeners>
+
+  	<test name="Clone" parallel="false" preserve-order="true" thread-count="1" >
+    	<classes>
+      		<class name="com.froalacharts.apitest.Clone" />
+    	</classes>
+  	</test>
+  	
+</suite>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FusionCharts TimeSeries</title>
+</head>
+
+<script src="./build/develop/fusioncharts.js"></script>
+
+<body>
+    <div id="ft-container"></div>
+    <script>
+        var tsChart;
+
+        var data = [],
+            schema = [{
+                    "name": "seriesName",
+                    "type": "string"
+                }, {
+                    "name": "Date",
+                    "type": "date",
+                    "format": "%Q"
+                },
+                {
+                    "name": "Measure1",
+                    "type": "number"
+                }, {
+                    "name": "Measure2",
+                    "type": "number"
+                }, {
+                    "name": "Measure3",
+                    "type": "number"
+                }, {
+                    "name": "Measure4",
+                    "type": "number"
+                }, {
+                    "name": "Volume",
+                    "type": "number"
+                }
+            ],
+            dataStore,
+            dataTable,
+            dataCount = 1500,
+            date = new Date('January 2019'),
+            dataValue = 1,
+            seriesString;
+        for (var i = 0; i < dataCount; i++) {
+            seriesString = (dataValue % 2 === 0) ? 'Even' : 'Odd';
+            data.push([
+                seriesString,
+                date.getTime(),
+                dataValue,
+                dataValue + 4,
+                dataValue - 2,
+                dataValue + 2
+            ]);
+            data.push([
+                (seriesString === 'Even') ? 'Odd' : 'Even',
+                date.getTime(),
+                dataValue + 1,
+                dataValue + 5,
+                dataValue - 1,
+                dataValue + 1
+            ]);
+            dataValue++;
+            date.setDate(date.getDate() + 1);
+        }
+        dataStore = new FusionCharts.DataStore(data, schema);
+        dataTable = dataStore.getDataTable();
+
+        FusionCharts.ready(function () {
+            tsChart = new FusionCharts({
+                id: 'fusiontimeid',
+                type: 'timeseries',
+                renderAt: 'ft-container',
+                width: 1200,
+                height: 1000,
+                dataSource: {
+                    data: dataTable,
+                    "yaxis": [{
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "column"
+                            },
+                            "title": "column",
+                            "series": "Item"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "line"
+                            },
+                            "title": "line"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "smooth-line"
+                            },
+                            "title": "smooth-line"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "step-line"
+                            },
+                            "title": "step-line"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "area"
+                            },
+                            "title": "area"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "smooth-area"
+                            },
+                            "title": "smooth-area"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "step-area"
+                            },
+                            "title": "step-area"
+                        },
+                        {
+                            "plot": {
+                                "value": {
+                                    open: "Measure1",
+                                    high: "Measure2",
+                                    low: "Measure3",
+                                    close: "Measure4"
+                                },
+                                "type": "candlestick"
+                            },
+                            "title": "candlestick"
+                        },
+                        {
+                            "plot": {
+                                "value": {
+                                    open: "Measure1",
+                                    high: "Measure2",
+                                    low: "Measure3",
+                                    close: "Measure4"
+                                },
+                                "type": "ohlc"
+                            },
+                            "title": "ohlc"
+                        }
+                    ],
+                    "series": "seriesName",
+                    "caption": {
+                        "text": "I am a caption"
+                    },
+                    "subcaption": {
+                        "text": "I am a subcaption"
+                    },
+                    "chart": {
+                        "animation": 0,
+                        "exportenabled": 1,
+                        "enableChartMouseMoveEvent": 1,
+                        "showprintmenuitem": 1,
+                        "animationduration": 0
+                    }
+                }
+            });
+            tsChart.render();
+        });
+    </script>
+</body>
+
+</html>

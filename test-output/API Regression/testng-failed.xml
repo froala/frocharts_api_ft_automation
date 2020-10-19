@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API Regression]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.froalacharts.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="AddRemoveEventListener(failed)">
+    <classes>
+      <class name="com.froalacharts.apitest.AddRemoveEventListener">
+        <methods>
+          <include name="shutDown"/>
+          <include name="addRemoveEventListener"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.AddRemoveEventListener -->
+    </classes>
+  </test> <!-- AddRemoveEventListener(failed) -->
+</suite> <!-- Failed suite [API Regression] -->

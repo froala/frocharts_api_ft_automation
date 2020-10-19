@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-07T08:19:40Z" name="API Regression" finished-at="2020-09-07T08:24:49Z" duration-ms="309175">
+    <groups>
+    </groups>
+    <test started-at="2020-09-07T08:19:40Z" name="ResizeTo" finished-at="2020-09-07T08:20:00Z" duration-ms="19894">
+      <class name="com.froalacharts.apitest.ResizeTo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.ResizeTo@3c407114]" started-at="2020-09-07T13:49:40Z" name="setUp" finished-at="2020-09-07T13:49:51Z" duration-ms="11556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="resizeTo()[pri:0, instance:com.froalacharts.apitest.ResizeTo@3c407114]" started-at="2020-09-07T13:49:51Z" name="resizeTo" finished-at="2020-09-07T13:49:55Z" duration-ms="3495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resizeTo -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.ResizeTo@3c407114]" started-at="2020-09-07T13:49:55Z" name="shutDown" finished-at="2020-09-07T13:50:00Z" duration-ms="4822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.ResizeTo -->
+    </test> <!-- ResizeTo -->
+    <test started-at="2020-09-07T08:20:00Z" name="AddRemoveEventListener" finished-at="2020-09-07T08:20:55Z" duration-ms="55491">
+      <class name="com.froalacharts.apitest.AddRemoveEventListener">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.AddRemoveEventListener@59fd97a8]" started-at="2020-09-07T13:50:00Z" name="setUp" finished-at="2020-09-07T13:50:09Z" duration-ms="9490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addRemoveEventListener()[pri:0, instance:com.froalacharts.apitest.AddRemoveEventListener@59fd97a8]" started-at="2020-09-07T13:50:09Z" name="addRemoveEventListener" finished-at="2020-09-07T13:50:51Z" duration-ms="41473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRemoveEventListener -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.AddRemoveEventListener@59fd97a8]" started-at="2020-09-07T13:50:51Z" name="shutDown" finished-at="2020-09-07T13:50:55Z" duration-ms="4525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.AddRemoveEventListener -->
+    </test> <!-- AddRemoveEventListener -->
+    <test started-at="2020-09-07T08:20:55Z" name="Clone" finished-at="2020-09-07T08:21:18Z" duration-ms="22957">
+      <class name="com.froalacharts.apitest.Clone">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.Clone@14dd9eb7]" started-at="2020-09-07T13:50:55Z" name="setUp" finished-at="2020-09-07T13:51:05Z" duration-ms="10172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="cloneAPI()[pri:0, instance:com.froalacharts.apitest.Clone@14dd9eb7]" started-at="2020-09-07T13:51:05Z" name="cloneAPI" finished-at="2020-09-07T13:51:14Z" duration-ms="8290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneAPI -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.Clone@14dd9eb7]" started-at="2020-09-07T13:51:14Z" name="shutDown" finished-at="2020-09-07T13:51:18Z" duration-ms="4490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.Clone -->
+    </test> <!-- Clone -->
+    <test started-at="2020-09-07T08:21:18Z" name="Dispose" finished-at="2020-09-07T08:21:41Z" duration-ms="22809">
+      <class name="com.froalacharts.apitest.Dispose">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.Dispose@8dbdac1]" started-at="2020-09-07T13:51:18Z" name="setUp" finished-at="2020-09-07T13:51:28Z" duration-ms="9857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dispose()[pri:0, instance:com.froalacharts.apitest.Dispose@8dbdac1]" started-at="2020-09-07T13:51:28Z" name="dispose" finished-at="2020-09-07T13:51:37Z" duration-ms="8689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dispose -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.Dispose@8dbdac1]" started-at="2020-09-07T13:51:37Z" name="shutDown" finished-at="2020-09-07T13:51:41Z" duration-ms="4262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.Dispose -->
+    </test> <!-- Dispose -->
+    <test started-at="2020-09-07T08:21:41Z" name="GetChartData" finished-at="2020-09-07T08:21:55Z" duration-ms="13748">
+      <class name="com.froalacharts.apitest.GetChartData">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.GetChartData@5af3afd9]" started-at="2020-09-07T13:51:41Z" name="setUp" finished-at="2020-09-07T13:51:50Z" duration-ms="8922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getChartData()[pri:0, instance:com.froalacharts.apitest.GetChartData@5af3afd9]" started-at="2020-09-07T13:51:50Z" name="getChartData" finished-at="2020-09-07T13:51:50Z" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getChartData -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.GetChartData@5af3afd9]" started-at="2020-09-07T13:51:50Z" name="shutDown" finished-at="2020-09-07T13:51:55Z" duration-ms="4543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.GetChartData -->
+    </test> <!-- GetChartData -->
+    <test started-at="2020-09-07T08:21:55Z" name="SetChartData" finished-at="2020-09-07T08:22:22Z" duration-ms="26715">
+      <class name="com.froalacharts.apitest.SetChartData">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.SetChartData@4f6ee6e4]" started-at="2020-09-07T13:51:55Z" name="setUp" finished-at="2020-09-07T13:52:04Z" duration-ms="8651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="setChartData()[pri:0, instance:com.froalacharts.apitest.SetChartData@4f6ee6e4]" started-at="2020-09-07T13:52:04Z" name="setChartData" finished-at="2020-09-07T13:52:17Z" duration-ms="13254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setChartData -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.SetChartData@4f6ee6e4]" started-at="2020-09-07T13:52:17Z" name="shutDown" finished-at="2020-09-07T13:52:22Z" duration-ms="4808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.SetChartData -->
+    </test> <!-- SetChartData -->
+    <test started-at="2020-09-07T08:22:22Z" name="GetObjectReference" finished-at="2020-09-07T08:22:46Z" duration-ms="24079">
+      <class name="com.froalacharts.apitest.GetObjectReference">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.GetObjectReference@6379eb]" started-at="2020-09-07T13:52:22Z" name="setUp" finished-at="2020-09-07T13:52:31Z" duration-ms="8977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getObjectReference()[pri:0, instance:com.froalacharts.apitest.GetObjectReference@6379eb]" started-at="2020-09-07T13:52:31Z" name="getObjectReference" finished-at="2020-09-07T13:52:41Z" duration-ms="10432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getObjectReference -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.GetObjectReference@6379eb]" started-at="2020-09-07T13:52:41Z" name="shutDown" finished-at="2020-09-07T13:52:46Z" duration-ms="4669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.GetObjectReference -->
+    </test> <!-- GetObjectReference -->
+    <test started-at="2020-09-07T08:22:46Z" name="GetSetChartAttribute" finished-at="2020-09-07T08:23:08Z" duration-ms="22223">
+      <class name="com.froalacharts.apitest.GetSetChartAttribute">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.GetSetChartAttribute@6c64cb25]" started-at="2020-09-07T13:52:46Z" name="setUp" finished-at="2020-09-07T13:52:55Z" duration-ms="9140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getSetChartAttribute()[pri:0, instance:com.froalacharts.apitest.GetSetChartAttribute@6c64cb25]" started-at="2020-09-07T13:52:55Z" name="getSetChartAttribute" finished-at="2020-09-07T13:53:04Z" duration-ms="8806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSetChartAttribute -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.GetSetChartAttribute@6c64cb25]" started-at="2020-09-07T13:53:04Z" name="shutDown" finished-at="2020-09-07T13:53:08Z" duration-ms="4276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.GetSetChartAttribute -->
+    </test> <!-- GetSetChartAttribute -->
+    <test started-at="2020-09-07T08:23:08Z" name="GetSetCurrentBin" finished-at="2020-09-07T08:23:36Z" duration-ms="27858">
+      <class name="com.froalacharts.apitest.GetSetCurrentBin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.GetSetCurrentBin@478190fc]" started-at="2020-09-07T13:53:08Z" name="setUp" finished-at="2020-09-07T13:53:18Z" duration-ms="9802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getSetCurrentBin()[pri:0, instance:com.froalacharts.apitest.GetSetCurrentBin@478190fc]" started-at="2020-09-07T13:53:18Z" name="getSetCurrentBin" finished-at="2020-09-07T13:53:32Z" duration-ms="13691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSetCurrentBin -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.GetSetCurrentBin@478190fc]" started-at="2020-09-07T13:53:32Z" name="shutDown" finished-at="2020-09-07T13:53:36Z" duration-ms="4362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.GetSetCurrentBin -->
+    </test> <!-- GetSetCurrentBin -->
+    <test started-at="2020-09-07T08:23:36Z" name="GetSetTimeSelection" finished-at="2020-09-07T08:23:49Z" duration-ms="13182">
+      <class name="com.froalacharts.apitest.GetSetTimeSelection">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.GetSetTimeSelection@36902638]" started-at="2020-09-07T13:53:36Z" name="setUp" finished-at="2020-09-07T13:53:45Z" duration-ms="8805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getSetTimeSelection()[pri:0, instance:com.froalacharts.apitest.GetSetTimeSelection@36902638]" started-at="2020-09-07T13:53:45Z" name="getSetTimeSelection" finished-at="2020-09-07T13:53:45Z" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSetTimeSelection -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.GetSetTimeSelection@36902638]" started-at="2020-09-07T13:53:45Z" name="shutDown" finished-at="2020-09-07T13:53:49Z" duration-ms="4113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.GetSetTimeSelection -->
+    </test> <!-- GetSetTimeSelection -->
+    <test started-at="2020-09-07T08:23:49Z" name="GetSVGString" finished-at="2020-09-07T08:24:03Z" duration-ms="13615">
+      <class name="com.froalacharts.apitest.GetSVGString">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.GetSVGString@57a3af25]" started-at="2020-09-07T13:53:49Z" name="setUp" finished-at="2020-09-07T13:53:58Z" duration-ms="8891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getSVGString()[pri:0, instance:com.froalacharts.apitest.GetSVGString@57a3af25]" started-at="2020-09-07T13:53:58Z" name="getSVGString" finished-at="2020-09-07T13:53:58Z" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSVGString -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.GetSVGString@57a3af25]" started-at="2020-09-07T13:53:58Z" name="shutDown" finished-at="2020-09-07T13:54:03Z" duration-ms="4515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.GetSVGString -->
+    </test> <!-- GetSVGString -->
+    <test started-at="2020-09-07T08:24:03Z" name="LockResize" finished-at="2020-09-07T08:24:23Z" duration-ms="19622">
+      <class name="com.froalacharts.apitest.LockResize">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.LockResize@9597028]" started-at="2020-09-07T13:54:03Z" name="setUp" finished-at="2020-09-07T13:54:13Z" duration-ms="9998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="lockResize()[pri:0, instance:com.froalacharts.apitest.LockResize@9597028]" started-at="2020-09-07T13:54:13Z" name="lockResize" finished-at="2020-09-07T13:54:18Z" duration-ms="5318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lockResize -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.LockResize@9597028]" started-at="2020-09-07T13:54:18Z" name="shutDown" finished-at="2020-09-07T13:54:23Z" duration-ms="4304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.LockResize -->
+    </test> <!-- LockResize -->
+    <test started-at="2020-09-07T08:24:23Z" name="ShowHideChartMessage" finished-at="2020-09-07T08:24:49Z" duration-ms="26069">
+      <class name="com.froalacharts.apitest.ShowHideChartMessage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.froalacharts.apitest.ShowHideChartMessage@747ddf94]" started-at="2020-09-07T13:54:23Z" name="setUp" finished-at="2020-09-07T13:54:32Z" duration-ms="9408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="showHideChartMessage()[pri:0, instance:com.froalacharts.apitest.ShowHideChartMessage@747ddf94]" started-at="2020-09-07T13:54:32Z" name="showHideChartMessage" finished-at="2020-09-07T13:54:44Z" duration-ms="12282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showHideChartMessage -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:com.froalacharts.apitest.ShowHideChartMessage@747ddf94]" started-at="2020-09-07T13:54:44Z" name="shutDown" finished-at="2020-09-07T13:54:49Z" duration-ms="4378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.froalacharts.apitest.ShowHideChartMessage -->
+    </test> <!-- ShowHideChartMessage -->
+  </suite> <!-- API Regression -->
+</testng-results>

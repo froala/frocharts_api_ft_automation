@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FroalaCharts TimeSeries</title>
+</head>
+
+<script src="./build/froalacharts/froalacharts.js"></script>
+
+<script type="text/javascript">
+    var froalacharts, events = {};
+
+    window.onerror = function (errorMsg, url, lineNumber, no) {
+        jsError = 'Error: ' + errorMsg + ', Script: ' + url + ', Line: ' + lineNumber;
+    }
+</script>
+
+<body>
+    <div class="">
+        <input type="text" id="chart_message" placeholder="Enter your message here." />
+
+        <select id="mode">
+            <option value="overlaycan">Show message as modal</option>
+            <option value="overlay">Show message as non-closable modal</option>
+            <option value="onchart">Show message over the chart</option>
+        </select>
+
+        <button id="show_message">Show Message</button>
+    </div>
+    <div id="ft-container"></div>
+    <script>
+        var tsChart;
+
+        function show() {
+
+            var mode = document.getElementById("mode");
+            var msg = document.getElementById("chart_message").value.trim();
+            if (msg !== '' && mode.selectedIndex !== 0) {
+                tsChart.render();
+                if (mode.value == "onchart") {
+                    tsChart.showChartMessage(msg);
+                } else if (mode.value == "overlay") {
+                    tsChart.showChartMessage(msg, true);
+                } else if (mode.value == "overlaycan") {
+                    tsChart.showChartMessage(msg, true, true);
+                }
+            }
+        }
+        document.getElementById("show_message").addEventListener("click", show);
+
+        var data = [
+                [
+                    "US",
+                    "1980-12-12",
+                    0.513393,
+                    0.515625,
+                    0.513393,
+                    0.513393,
+                    117258400
+                ],
+                [
+                    "US",
+                    "1980-12-15",
+                    0.488839,
+                    0.488839,
+                    0.486607,
+                    0.486607,
+                    43971200
+                ],
+                [
+                    "India",
+                    "1980-12-16",
+                    0.453125,
+                    0.453125,
+                    0.450893,
+                    0.450893,
+                    26432000
+                ],
+                [
+                    "UK",
+                    "1980-12-17",
+                    0.462054,
+                    0.464286,
+                    0.462054,
+                    0.462054,
+                    21610400
+                ],
+                [
+                    "India",
+                    "1980-12-18",
+                    0.475446,
+                    0.477679,
+                    0.475446,
+                    0.475446,
+                    18362400
+                ],
+                [
+                    "US",
+                    "1980-12-19",
+                    0.504464,
+                    0.506696,
+                    0.504464,
+                    0.504464,
+                    12157600
+                ],
+                [
+                    "UK",
+                    "1980-12-22",
+                    0.529018,
+                    0.53125,
+                    0.529018,
+                    0.529018,
+                    9340800
+                ],
+                [
+                    "India",
+                    "1980-12-23",
+                    0.551339,
+                    0.553571,
+                    0.551339,
+                    0.551339,
+                    11737600
+                ],
+                [
+                    "UK",
+                    "1980-12-24",
+                    0.580357,
+                    0.582589,
+                    0.580357,
+                    0.580357,
+                    12000800
+                ]
+            ],
+            schema = [{
+                    "name": "Country",
+                    "type": "string"
+                }, {
+                    "name": "Date",
+                    "type": "date",
+                    "format": "%Y-%m-%d"
+                },
+                {
+                    "name": "Measure1",
+                    "type": "number"
+                }, {
+                    "name": "Measure2",
+                    "type": "number"
+                }, {
+                    "name": "Measure3",
+                    "type": "number"
+                }, {
+                    "name": "Measure4",
+                    "type": "number"
+                }, {
+                    "name": "Volume",
+                    "type": "number"
+                }
+            ],
+            dataStore = new FroalaCharts.DataStore(data, schema),
+            dataTable = dataStore.getDataTable();
+
+        FroalaCharts.ready(function () {
+            tsChart = new FroalaCharts({
+                id: 'fusiontimeid',
+                type: 'timeseries',
+                renderAt: 'ft-container',
+                width: 1200,
+                height: 2000,
+                dataSource: {
+                    data: dataTable,
+                    "yaxis": [{
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "column"
+                            },
+                            "title": "column",
+                            "series": "Country"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "line"
+                            },
+                            "title": "line"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "smooth-line"
+                            },
+                            "title": "smooth-line"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "step-line"
+                            },
+                            "title": "step-line"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "area"
+                            },
+                            "title": "area"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "smooth-area"
+                            },
+                            "title": "smooth-area"
+                        },
+                        {
+                            "plot": {
+                                "value": "Measure1",
+                                "type": "step-area"
+                            },
+                            "title": "step-area"
+                        },
+                        {
+                            "plot": {
+                                "value": {
+                                    open: "Measure1",
+                                    high: "Measure2",
+                                    low: "Measure3",
+                                    close: "Measure4"
+                                },
+                                "type": "candlestick"
+                            },
+                            "title": "candlestick"
+                        },
+                        {
+                            "plot": {
+                                "value": {
+                                    open: "Measure1",
+                                    high: "Measure2",
+                                    low: "Measure3",
+                                    close: "Measure4"
+                                },
+                                "type": "ohlc"
+                            },
+                            "title": "ohlc"
+                        }
+                    ],
+                    // "series": "Country",
+                    "caption": {
+                        "text": "I am a caption"
+                    },
+                    "subcaption": {
+                        "text": "I am a subcaption"
+                    },
+                    "chart": {
+                        "animation": 0,
+                        "exportenabled": 1,
+                        "enableChartMouseMoveEvent": 1,
+                        "showprintmenuitem": 1,
+                        "animationduration": 0
+                    }
+                }
+            });
+            tsChart.render();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-API_Regression" class="navigator-link">
+              <span class="suite-name border-passed">API Regression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-API_Regression" class="navigator-link ">
+                    <span>C:\Apache24\htdocs\api_ft_automation\testng-all.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-API_Regression" class="navigator-link ">
+                    <span class="test-stats">13 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-API_Regression" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-API_Regression" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-API_Regression" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-API_Regression" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-API_Regression" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-API_Regression" class="hide-methods passed suite-API_Regression"> (hide)</a> <!-- hide-methods passed suite-API_Regression -->
+                      <a href="#" panel-name="suite-API_Regression" class="show-methods passed suite-API_Regression"> (show)</a> <!-- show-methods passed suite-API_Regression -->
+                    </span>
+                    <div class="method-list-content passed suite-API_Regression">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.AddRemoveEventListener" class="method navigator-link" hash-for-method="addRemoveEventListener">addRemoveEventListener</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.Clone" class="method navigator-link" hash-for-method="cloneAPI">cloneAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.Dispose" class="method navigator-link" hash-for-method="dispose">dispose</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.GetChartData" class="method navigator-link" hash-for-method="getChartData">getChartData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.GetObjectReference" class="method navigator-link" hash-for-method="getObjectReference">getObjectReference</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.GetSVGString" class="method navigator-link" hash-for-method="getSVGString">getSVGString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.GetSetChartAttribute" class="method navigator-link" hash-for-method="getSetChartAttribute">getSetChartAttribute</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.GetSetCurrentBin" class="method navigator-link" hash-for-method="getSetCurrentBin">getSetCurrentBin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.GetSetTimeSelection" class="method navigator-link" hash-for-method="getSetTimeSelection">getSetTimeSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.LockResize" class="method navigator-link" hash-for-method="lockResize">lockResize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.ResizeTo" class="method navigator-link" hash-for-method="resizeTo">resizeTo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.SetChartData" class="method navigator-link" hash-for-method="setChartData">setChartData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-API_Regression" title="com.froalacharts.apitest.ShowHideChartMessage" class="method navigator-link" hash-for-method="showHideChartMessage">showHideChartMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-API_Regression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-API_Regression" class="panel API_Regression">
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.AddRemoveEventListener</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRemoveEventListener">
+                  </a> <!-- addRemoveEventListener -->
+                  <span class="method-name">addRemoveEventListener</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.GetSetTimeSelection</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSetTimeSelection">
+                  </a> <!-- getSetTimeSelection -->
+                  <span class="method-name">getSetTimeSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.LockResize</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockResize">
+                  </a> <!-- lockResize -->
+                  <span class="method-name">lockResize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.SetChartData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setChartData">
+                  </a> <!-- setChartData -->
+                  <span class="method-name">setChartData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.GetSVGString</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSVGString">
+                  </a> <!-- getSVGString -->
+                  <span class="method-name">getSVGString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.Clone</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cloneAPI">
+                  </a> <!-- cloneAPI -->
+                  <span class="method-name">cloneAPI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.GetChartData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getChartData">
+                  </a> <!-- getChartData -->
+                  <span class="method-name">getChartData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.GetObjectReference</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getObjectReference">
+                  </a> <!-- getObjectReference -->
+                  <span class="method-name">getObjectReference</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.GetSetChartAttribute</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSetChartAttribute">
+                  </a> <!-- getSetChartAttribute -->
+                  <span class="method-name">getSetChartAttribute</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.ResizeTo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="resizeTo">
+                  </a> <!-- resizeTo -->
+                  <span class="method-name">resizeTo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.Dispose</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dispose">
+                  </a> <!-- dispose -->
+                  <span class="method-name">dispose</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.ShowHideChartMessage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="showHideChartMessage">
+                  </a> <!-- showHideChartMessage -->
+                  <span class="method-name">showHideChartMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+          <div class="suite-API_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.froalacharts.apitest.GetSetCurrentBin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSetCurrentBin">
+                  </a> <!-- getSetCurrentBin -->
+                  <span class="method-name">getSetCurrentBin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression-class-passed -->
+        </div> <!-- panel API_Regression -->
+        <div panel-name="test-xml-API_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Apache24\htdocs\api_ft_automation\testng-all.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;API Regression&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.froalacharts.ExtentReportListener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;ResizeTo&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.ResizeTo&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ResizeTo --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;AddRemoveEventListener&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.AddRemoveEventListener&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddRemoveEventListener --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Clone&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.Clone&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Clone --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Dispose&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.Dispose&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Dispose --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;GetChartData&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.GetChartData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GetChartData --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;SetChartData&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.SetChartData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SetChartData --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;GetObjectReference&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.GetObjectReference&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GetObjectReference --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;GetSetChartAttribute&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.GetSetChartAttribute&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GetSetChartAttribute --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;GetSetCurrentBin&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.GetSetCurrentBin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GetSetCurrentBin --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;GetSetTimeSelection&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.GetSetTimeSelection&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GetSetTimeSelection --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;GetSVGString&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.GetSVGString&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GetSVGString --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;LockResize&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.LockResize&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LockResize --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;ShowHideChartMessage&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.froalacharts.apitest.ShowHideChartMessage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ShowHideChartMessage --&gt;
+&lt;/suite&gt; &lt;!-- API Regression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-API_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for API Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ResizeTo (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddRemoveEventListener (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Clone (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Dispose (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GetChartData (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SetChartData (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GetObjectReference (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GetSetChartAttribute (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GetSetCurrentBin (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GetSetTimeSelection (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GetSVGString (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LockResize (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ShowHideChartMessage (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-API_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for API Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-API_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for API Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_API_Regression');
+function tableData_API_Regression() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addRemoveEventListener')
+data.setCell(0, 2, 'com.froalacharts.apitest.AddRemoveEventListener')
+data.setCell(0, 3, 41473);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getSetCurrentBin')
+data.setCell(1, 2, 'com.froalacharts.apitest.GetSetCurrentBin')
+data.setCell(1, 3, 13691);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'setChartData')
+data.setCell(2, 2, 'com.froalacharts.apitest.SetChartData')
+data.setCell(2, 3, 13254);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'showHideChartMessage')
+data.setCell(3, 2, 'com.froalacharts.apitest.ShowHideChartMessage')
+data.setCell(3, 3, 12282);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getObjectReference')
+data.setCell(4, 2, 'com.froalacharts.apitest.GetObjectReference')
+data.setCell(4, 3, 10432);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getSetChartAttribute')
+data.setCell(5, 2, 'com.froalacharts.apitest.GetSetChartAttribute')
+data.setCell(5, 3, 8806);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'dispose')
+data.setCell(6, 2, 'com.froalacharts.apitest.Dispose')
+data.setCell(6, 3, 8689);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'cloneAPI')
+data.setCell(7, 2, 'com.froalacharts.apitest.Clone')
+data.setCell(7, 3, 8290);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'lockResize')
+data.setCell(8, 2, 'com.froalacharts.apitest.LockResize')
+data.setCell(8, 3, 5318);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'resizeTo')
+data.setCell(9, 2, 'com.froalacharts.apitest.ResizeTo')
+data.setCell(9, 3, 3495);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getChartData')
+data.setCell(10, 2, 'com.froalacharts.apitest.GetChartData')
+data.setCell(10, 3, 281);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getSetTimeSelection')
+data.setCell(11, 2, 'com.froalacharts.apitest.GetSetTimeSelection')
+data.setCell(11, 3, 261);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getSVGString')
+data.setCell(12, 2, 'com.froalacharts.apitest.GetSVGString')
+data.setCell(12, 3, 207);
+window.suiteTableData['API_Regression']= { tableData: data, tableDiv: 'times-div-API_Regression'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-API_Regression">
+              </div> <!-- times-div-API_Regression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-API_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for API Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-API_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-API_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.ResizeTo</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">resizeTo</span>
+                <span class="method-start">11568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">15066 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.AddRemoveEventListener</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20040 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">addRemoveEventListener</span>
+                <span class="method-start">29531 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">71005 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.Clone</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">75590 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">cloneAPI</span>
+                <span class="method-start">85762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">94056 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.Dispose</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">98601 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">dispose</span>
+                <span class="method-start">108458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">117147 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.GetChartData</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">121534 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">getChartData</span>
+                <span class="method-start">130456 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">130738 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.SetChartData</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">135355 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">setChartData</span>
+                <span class="method-start">144006 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">157262 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.GetObjectReference</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">162129 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">getObjectReference</span>
+                <span class="method-start">171106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">181538 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.GetSetChartAttribute</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">186281 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">getSetChartAttribute</span>
+                <span class="method-start">195421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">204228 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.GetSetCurrentBin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">208554 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">getSetCurrentBin</span>
+                <span class="method-start">218357 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">232049 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.GetSetTimeSelection</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">236473 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">getSetTimeSelection</span>
+                <span class="method-start">245278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">245541 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.GetSVGString</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">249713 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">getSVGString</span>
+                <span class="method-start">258604 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">258812 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.LockResize</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">263378 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">lockResize</span>
+                <span class="method-start">273377 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">278696 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.froalacharts.apitest.ShowHideChartMessage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">283100 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">showHideChartMessage</span>
+                <span class="method-start">292508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutDown</span>
+                <span class="method-start">304791 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
