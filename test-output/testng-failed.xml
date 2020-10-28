@@ -4,15 +4,87 @@
   <listeners>
     <listener class-name="com.froalacharts.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
-  <test name="AddRemoveEventListener(failed)">
+  <test name="Clone(failed)">
     <classes>
+      <class name="com.froalacharts.apitest.SetChartData">
+        <methods>
+          <include name="shutDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.SetChartData -->
       <class name="com.froalacharts.apitest.AddRemoveEventListener">
         <methods>
           <include name="shutDown"/>
-          <include name="addRemoveEventListener"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.froalacharts.apitest.AddRemoveEventListener -->
+      <class name="com.froalacharts.apitest.GetObjectReference">
+        <methods>
+          <include name="setUp"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.GetObjectReference -->
+      <class name="com.froalacharts.apitest.GetSetChartAttribute">
+        <methods>
+          <include name="shutDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.GetSetChartAttribute -->
+      <class name="com.froalacharts.apitest.Clone">
+        <methods>
+          <include name="setUp"/>
+          <include name="cloneAPI"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.Clone -->
+      <class name="com.froalacharts.apitest.Dispose">
+        <methods>
+          <include name="setUp"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.Dispose -->
+      <class name="com.froalacharts.apitest.ResizeTo">
+        <methods>
+          <include name="setUp"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.ResizeTo -->
+      <class name="com.froalacharts.apitest.GetChartData">
+        <methods>
+          <include name="setUp"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.GetChartData -->
+      <class name="com.froalacharts.apitest.GetSetCurrentBin">
+        <methods>
+          <include name="shutDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.GetSetCurrentBin -->
+      <class name="com.froalacharts.apitest.GetSVGString">
+        <methods>
+          <include name="shutDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.GetSVGString -->
+      <class name="com.froalacharts.apitest.ShowHideChartMessage">
+        <methods>
+          <include name="setUp"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.ShowHideChartMessage -->
+      <class name="com.froalacharts.apitest.LockResize">
+        <methods>
+          <include name="shutDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.LockResize -->
+      <class name="com.froalacharts.apitest.GetSetTimeSelection">
+        <methods>
+          <include name="setUp"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.froalacharts.apitest.GetSetTimeSelection -->
     </classes>
-  </test> <!-- AddRemoveEventListener(failed) -->
+  </test> <!-- Clone(failed) -->
 </suite> <!-- Failed suite [API Regression] -->
